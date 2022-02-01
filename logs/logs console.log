@@ -1,0 +1,148 @@
+Execution of 1 workers started at 2022-02-01T23:35:07.021Z
+
+2022-02-01T23:35:07.022Z DEBUG @wdio/utils:initialiseServices: initialise service "appium" as NPM package      
+2022-02-01T23:35:07.031Z DEBUG @wdio/utils:initialiseServices: initialise service "chromedriver" as NPM package
+2022-02-01T23:35:07.080Z DEBUG @wdio/utils:initialiseServices: initialise service "image-comparison" as NPM package
+2022-02-01T23:35:07.148Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-02-01T23:35:07.150Z DEBUG @wdio/appium-service: Will spawn Appium process: cmd /c node C:\automation\wdio-with-appium-example-\node_modules\appium\index.js --base-path /
+2022-02-01T23:35:07.155Z INFO chromedriver: Start Chromedriver (C:\automation\wdio-with-appium-example-\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2022-02-01T23:35:07.181Z INFO chromedriver: Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 9515
+2022-02-01T23:35:07.182Z INFO chromedriver: Only local connections are allowed.
+2022-02-01T23:35:07.182Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+2022-02-01T23:35:07.183Z INFO chromedriver: ChromeDriver was started successfully.
+2022-02-01T23:35:10.621Z ERROR @wdio/cli:utils: A service failed in the 'onPrepare' hook
+Error: Appium exited before timeout (exit code: 1)
+    at ChildProcess.<anonymous> (C:\automation\wdio-with-appium-example-\node_modules\@wdio\appium-service\build\launcher.js:110:22)
+    at Object.onceWrapper (node:events:434:26)
+    at ChildProcess.emit (node:events:327:20)
+    at ChildProcess.EventEmitter.emit (node:domain:486:12)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:277:12)
+
+Continue...
+2022-02-01T23:35:10.622Z DEBUG @wdio/cli:utils: Finished to run "onPrepare" hook in 3473ms
+2022-02-01T23:35:10.623Z WARN @wdio/config:ConfigParser: pattern ./test/specs/check_form.ts did not match any file
+2022-02-01T23:35:10.624Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-02-01T23:35:10.625Z DEBUG @wdio/cli:utils: Finished to run "onWorkerStart" hook in 0ms
+2022-02-01T23:35:10.626Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,./wdio.conf.js
+[0-0] 2022-02-01T23:35:11.195Z INFO @wdio/local-runner: Run worker command: run
+[0-0] 2022-02-01T23:35:11.473Z DEBUG @wdio/config:utils: Found 'ts-node' package, auto-compiling TypeScript files
+[0-0] 2022-02-01T23:35:11.626Z DEBUG @wdio/local-runner:utils: init remote session
+[0-0] 2022-02-01T23:35:11.630Z DEBUG @wdio/utils:initialiseServices: initialise service "appium" as NPM package
+[0-0] 2022-02-01T23:35:11.643Z DEBUG @wdio/utils:initialiseServices: initialise service "chromedriver" as NPM package
+[0-0] 2022-02-01T23:35:11.707Z DEBUG @wdio/utils:initialiseServices: initialise service "image-comparison" as NPM package
+[0-0] RUNNING in Android - C:\automation\wdio-with-appium-example-\test\specs\simple.ts
+[0-0] 2022-02-01T23:35:15.512Z DEBUG @wdio/local-runner:utils: init remote session
+[0-0] 2022-02-01T23:35:15.513Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2022-02-01T23:35:15.578Z INFO webdriver: [POST] http://localhost:4723/session
+[0-0] 2022-02-01T23:35:15.578Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       platformName: 'Android',
+[0-0]       'appium:deviceName': 'Pixel 3',
+[0-0]       'appium:platformVersion': '11.0',
+[0-0]       'appium:automationName': 'UIAutomator2',
+[0-0]       'appium:browserName': 'Chrome',
+[0-0]       'appium:chromedriverExecutable': 'C:/WebDriver/bin/chromedriver.exe',
+[0-0]       'appium:appiumVersion': '2.0.0-beta.25',
+[0-0]       'appium:waitforTimeout': '30000',
+[0-0]       'appium:commandTimeout': '30000'
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     platformName: 'Android',
+[0-0]     'appium:deviceName': 'Pixel 3',
+[0-0]     'appium:platformVersion': '11.0',
+[0-0]     'appium:automationName': 'UIAutomator2',
+[0-0]     'appium:browserName': 'Chrome',
+[0-0]     'appium:chromedriverExecutable': 'C:/WebDriver/bin/chromedriver.exe',
+[0-0]     'appium:appiumVersion': '2.0.0-beta.25',
+[0-0]     'appium:waitforTimeout': '30000',
+[0-0]     'appium:commandTimeout': '30000'
+[0-0]   }
+[0-0] }
+[0-0] 2022-02-01T23:35:22.364Z INFO wdio-image-comparison-service: Adding commands to Multi Browser:  [
+[0-0]   'maxInstances',
+[0-0]   'platformName',
+[0-0]   'appium:deviceName',
+[0-0]   'appium:platformVersion',
+[0-0]   'appium:automationName',
+[0-0]   'appium:browserName',
+[0-0]   'appium:chromedriverExecutable',
+[0-0]   'appium:appiumVersion',
+[0-0]   'appium:waitforTimeout',
+[0-0]   'appium:commandTimeout',
+[0-0]   'protocol',
+[0-0]   'hostname',
+[0-0]   'port',
+[0-0]   'path'
+[0-0] ]
+[0-0] 2022-02-01T23:35:22.367Z ERROR @wdio/utils:shim: TypeError: Cannot read property 'browserName' of undefined
+[0-0]     at getInstanceData (C:\automation\wdio-with-appium-example-\node_modules\wdio-image-comparison-service\build\utils.js:45:37)
+[0-0]     at WdioImageComparisonService.addCommandsToBrowser (C:\automation\wdio-with-appium-example-\node_modules\wdio-image-comparison-service\build\service.js:86:53)
+[0-0]     at WdioImageComparisonService.before (C:\automation\wdio-with-appium-example-\node_modules\wdio-image-comparison-service\build\service.js:67:14)
+[0-0]     at C:\automation\wdio-with-appium-example-\node_modules\@wdio\utils\build\shim.js:88:27
+[0-0]     at new Promise (<anonymous>)
+[0-0]     at C:\automation\wdio-with-appium-example-\node_modules\@wdio\utils\build\shim.js:85:47
+[0-0]     at Array.map (<anonymous>)
+[0-0]     at executeHooksWithArgsShim (C:\automation\wdio-with-appium-example-\node_modules\@wdio\utils\build\shim.js:85:33)
+[0-0]     at Runner.run (C:\automation\wdio-with-appium-example-\node_modules\@wdio\runner\build\index.js:99:48)
+[0-0]     at processTicksAndRejections (node:internal/process/task_queues:93:5)
+[0-0] 2022-02-01T23:35:22.367Z DEBUG @wdio/utils:shim: Finished to run "before" hook in 0ms
+[0-0] 2022-02-01T23:35:22.378Z INFO webdriver: COMMAND navigateTo("https://webdriver.io/")
+[0-0] 2022-02-01T23:35:22.378Z INFO webdriver: [POST] http://localhost:4723/session/7d63ab10-1934-4495-98aa-6858f7050133/url
+[0-0] 2022-02-01T23:35:22.378Z INFO webdriver: DATA { url: 'https://webdriver.io/' }
+[0-0] 2022-02-01T23:35:25.616Z INFO webdriver: COMMAND findElement("css selector", ".hero__title")
+[0-0] 2022-02-01T23:35:25.616Z INFO webdriver: [POST] http://localhost:4723/session/7d63ab10-1934-4495-98aa-6858f7050133/element
+[0-0] 2022-02-01T23:35:25.616Z INFO webdriver: DATA { using: 'css selector', value: '.hero__title' }
+[0-0] 2022-02-01T23:35:25.690Z INFO webdriver: RESULT {
+[0-0]   ELEMENT: '3a23f2c6-474b-4ae4-b7a5-552b89ab5a77',
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '3a23f2c6-474b-4ae4-b7a5-552b89ab5a77'
+[0-0] }
+[0-0] TypeError in "Test one.Simple test"
+TypeError: browser.checkElement is not a function
+    at C:\automation\wdio-with-appium-example-\test\specs\simple.ts:18:23
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\automation\wdio-with-appium-example-\test\specs\simple.ts:4:58)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+[0-0] 2022-02-01T23:35:25.717Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2022-02-01T23:35:25.718Z INFO webdriver: [DELETE] http://localhost:4723/session/7d63ab10-1934-4495-98aa-6858f7050133
+2022-02-01T23:35:26.180Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 1
+[0-0] FAILED in Android - C:\automation\wdio-with-appium-example-\test\specs\simple.ts
+2022-02-01T23:35:26.182Z INFO @wdio/cli:launcher: Run onComplete hook
+2022-02-01T23:35:26.182Z DEBUG @wdio/cli:utils: Finished to run "onComplete" hook in 0ms
+Report successfully generated to allure-report
+Allure report successfully generated
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[emulator-5554 Android 11 #0-0] Running: emulator-5554 on Android 11 executing Chrome
+[emulator-5554 Android 11 #0-0] Session ID: 7d63ab10-1934-4495-98aa-6858f7050133
+[emulator-5554 Android 11 #0-0]
+[emulator-5554 Android 11 #0-0] » \test\specs\simple.ts
+[emulator-5554 Android 11 #0-0] Test one
+[emulator-5554 Android 11 #0-0]    ✖ Simple test
+[emulator-5554 Android 11 #0-0]
+[emulator-5554 Android 11 #0-0] 1 failing (3.6s)
+[emulator-5554 Android 11 #0-0]
+[emulator-5554 Android 11 #0-0] 1) Test one Simple test
+[emulator-5554 Android 11 #0-0] browser.checkElement is not a function
+[emulator-5554 Android 11 #0-0] TypeError: browser.checkElement is not a function
+[emulator-5554 Android 11 #0-0]     at C:\automation\wdio-with-appium-example-\test\specs\simple.ts:18:23
+[emulator-5554 Android 11 #0-0]     at Generator.next (<anonymous>)
+[emulator-5554 Android 11 #0-0]     at fulfilled (C:\automation\wdio-with-appium-example-\test\specs\simple.ts:4:58)
+[emulator-5554 Android 11 #0-0]     at processTicksAndRejections (node:internal/process/task_queues:93:5)
+
+
+Spec Files:      0 passed, 1 failed, 1 total (100% completed) in 00:00:21
+
+2022-02-01T23:35:28.198Z INFO @wdio/local-runner: Shutting down spawned worker
+2022-02-01T23:35:28.449Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2022-02-01T23:35:28.450Z INFO @wdio/local-runner: shutting down
+npm ERR! code 1
+npm ERR! path C:\automation\wdio-with-appium-example-
+npm ERR! command failed
+npm ERR! command C:\WINDOWS\system32\cmd.exe /d /s /c "wdio run ./wdio.conf.js"
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\searc\AppData\Local\npm-cache\_logs\2022-02-01T23_35_28_477Z-debug.log

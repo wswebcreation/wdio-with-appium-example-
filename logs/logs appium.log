@@ -1,0 +1,261 @@
+[Appium] Welcome to Appium v2.0.0-beta.25
+[Appium] Attempting to load driver xcuitest...
+[Appium] Attempting to load driver uiautomator2...
+[Appium] Appium REST http interface listener started on 0.0.0.0:4723
+[Appium] Available drivers:
+[Appium]   - xcuitest@3.62.0 (automationName 'XCUITest')
+[Appium]   - uiautomator2@2.0.1 (automationName 'UiAutomator2')
+[Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+[HTTP] --> POST /session
+[HTTP] {"capabilities":{"alwaysMatch":{"platformName":"Android","appium:deviceName":"Pixel 3","appium:platformVersion":"11.0","appium:automationName":"UIAutomator2","appium:browserName":"Chrome","appium:chromedriverExecutable":"C:/WebDriver/bin/chromedriver.exe","appium:appiumVersion":"2.0.0-beta.25","appium:waitforTimeout":"30000","appium:commandTimeout":"30000"},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"Android","appium:deviceName":"Pixel 3","appium:platformVersion":"11.0","appium:automationName":"UIAutomator2","appium:browserName":"Chrome","appium:chromedriverExecutable":"C:/WebDriver/bin/chromedriver.exe","appium:appiumVersion":"2.0.0-beta.25","appium:waitforTimeout":"30000","appium:commandTimeout":"30000"}}
+[debug] [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","appium:deviceName":"Pixel 3","appium:platformVersion":"11.0","appium:automationName":"UIAutomator2","appium:browserName":"Chrome","appium:chromedriverExecutable":"C:/WebDriver/bin/chromedriver.exe","appium:appiumVersion":"2.0.0-beta.25","appium:waitforTimeout":"30000","appium:commandTimeout":"30000"},null,{"alwaysMatch":{"platformName":"Android","appium:deviceName":"Pixel 3","appium:platformVersion":"11.0","appium:automationName":"UIAutomator2","appium:browserName":"Chrome","appium:chromedriverExecutable":"C:/WebDriver/bin/chromedriver.exe","appium:appiumVersion":"2.0.0-beta.25","appium:waitforTimeout":"30000","appium:commandTimeout":"30000"},"firstMatch":[{}]}]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1643758337636 (07:32:17 GMT+0800 (Иркутск, стандартное время))
+[BaseDriver] The capabilities ["browserName"] are standard capabilities and do not require "appium:" prefix
+[Appium] Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'Android'
+[Appium] The 'uiautomator2' driver was installed and matched caps.
+[Appium] Will require it at C:\Users\searc\.appium\appium-uiautomator2-driver\node_modules\appium-uiautomator2-driver
+[Appium] Appium v2.0.0-beta.25 creating new AndroidUiautomator2Driver (v2.0.1) session
+[Appium] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+[Appium] Appium's BaseDriver version is 8.2.4
+[Appium] AndroidUiautomator2Driver's BaseDriver version is 8.2.4
+[BaseDriver] Appium received (M)JSONWP desired capabilities in alongside the W3C capabilities; they will be ignored
+[debug] [BaseDriver] Creating session with W3C capabilities: {
+[debug] [BaseDriver]   "alwaysMatch": {
+[debug] [BaseDriver]     "platformName": "Android",
+[debug] [BaseDriver]     "appium:deviceName": "Pixel 3",
+[debug] [BaseDriver]     "appium:platformVersion": "11.0",
+[debug] [BaseDriver]     "appium:automationName": "UIAutomator2",
+[debug] [BaseDriver]     "browserName": "Chrome",
+[debug] [BaseDriver]     "appium:chromedriverExecutable": "C:/WebDriver/bin/chromedriver.exe",
+[debug] [BaseDriver]     "appium:appiumVersion": "2.0.0-beta.25",
+[debug] [BaseDriver]     "appium:waitforTimeout": "30000",
+[debug] [BaseDriver]     "appium:commandTimeout": "30000"
+[debug] [BaseDriver]   },
+[debug] [BaseDriver]   "firstMatch": [
+[debug] [BaseDriver]     {}
+[debug] [BaseDriver]   ]
+[debug] [BaseDriver] }
+[BaseDriver] The following capabilities were provided, but are not recognized by Appium:
+[BaseDriver]   appiumVersion
+[BaseDriver]   waitforTimeout
+[BaseDriver]   commandTimeout
+[BaseDriver] Session created with session id: f3b97ead-e571-4f98-8019-688729990d86
+[UiAutomator2] We're going to run a Chrome-based session
+[UiAutomator2] Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
+[UiAutomator2] Starting 'com.android.chrome' directly on the device
+[ADB] Found 2 'build-tools' folders under 'C:\Users\searc\AppData\Local\Android\Sdk' (newest first):
+[ADB]     C:/Users/searc/AppData/Local/Android/Sdk/build-tools/31.0.0
+[ADB]     C:/Users/searc/AppData/Local/Android/Sdk/build-tools/30.0.2
+[ADB] Using 'adb.exe' from 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices
+[debug] [ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+[AndroidDriver] Looking for a device with Android '11.0.0'
+[debug] [ADB] Setting device id to emulator-5554
+[ADB] Getting device platform version
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'       
+[debug] [ADB] Current device property 'ro.build.version.release': 11
+[AndroidDriver] Using device: emulator-5554
+[ADB] Using 'adb.exe' from 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[debug] [ADB] Setting device id to emulator-5554
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+[debug] [ADB] Current device property 'ro.build.version.sdk': 30
+[ADB] Getting device platform version
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'       
+[debug] [ADB] Current device property 'ro.build.version.release': 11
+[debug] [ADB] Device API level: 30
+[UiAutomator2] Relaxing hidden api policy
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+[AndroidDriver] No app sent in, not parsing package/activity
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 wait-for-device'
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell echo ping'
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'     
+[debug] [ADB] 'io.appium.settings' is installed
+[debug] [ADB] Getting package info for 'io.appium.settings'
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'     
+[debug] [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('4.0.0' >= '4.0.0')
+[debug] [ADB] There is no need to install/upgrade 'C:\Users\searc\.appium\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[debug] [ADB] Getting IDs of all 'io.appium.settings' processes
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+[debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [Logcat] Starting logs capture with command: C:\\Users\\searc\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 logcat -v threadtime
+[debug] [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 8200
+[debug] [ADB] Forwarding system: 8200 to device: 6790
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward tcp:8200 tcp:6790'
+[debug] [ADB] Getting install status for io.appium.uiautomator2.server
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+[debug] [ADB] 'io.appium.uiautomator2.server' is installed
+[debug] [ADB] Getting package info for 'io.appium.uiautomator2.server'
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+[debug] [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('5.2.0' >= '5.2.0')
+[debug] [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+[debug] [ADB] Checking app cert for C:\Users\searc\.appium\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v5.2.0.apk
+[ADB] Using 'apksigner.jar' from 'C:\Users\searc\AppData\Local\Android\Sdk\build-tools\31.0.0\lib\apksigner.jar'
+[debug] [ADB] Starting apksigner: 'C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.2.8-hotspot\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\searc\\AppData\\Local\\Android\\Sdk\\build-tools\\31.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\searc\\.appium\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v5.2.0.apk
+[debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+[debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+[debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+[debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+[debug] [ADB]
+[debug] [ADB] sha256 hash did match for 'appium-uiautomator2-server-v5.2.0.apk'
+[ADB] 'C:\Users\searc\.appium\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v5.2.0.apk' is signed with the default certificate
+[debug] [ADB] Getting install status for io.appium.uiautomator2.server.test
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+[debug] [ADB] 'io.appium.uiautomator2.server.test' is installed
+[debug] [ADB] Checking app cert for C:\Users\searc\.appium\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+[debug] [ADB] Starting apksigner: 'C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.2.8-hotspot\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\searc\\AppData\\Local\\Android\\Sdk\\build-tools\\31.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\searc\\.appium\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+[debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+[debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+[debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+[debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+[debug] [ADB]
+[debug] [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+[ADB] 'C:\Users\searc\.appium\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+[UiAutomator2] Server packages are not going to be (re)installed
+[debug] [UiAutomator2] Waiting up to 30000ms for services to be available
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list instrumentation'
+[debug] [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+[ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+[debug] [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+[debug] [UiAutomator2] No app capability. Assuming it is already on the device
+[debug] [ADB] Getting install status for com.android.chrome
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package com.android.chrome'     
+[debug] [ADB] 'com.android.chrome' is installed
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.android.chrome'       
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm clear com.android.chrome'
+[debug] [AndroidDriver] Performed fast reset on the installed 'com.android.chrome' application (stop and clear)
+[debug] [UiAutomator2] Performing shallow cleanup of automation leftovers
+[debug] [UiAutomator2] No obsolete sessions have been detected (socket hang up)
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+[UiAutomator2] Starting UIAutomator2 server 5.2.0
+[UiAutomator2] Using UIAutomator2 server from 'C:\Users\searc\.appium\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v5.2.0.apk' and test from 'C:\Users\searc\.appium\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","emulator-5554","shell","am","instrument","-w","-e","disableAnalytics",true,"io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+[debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+[debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+[WD Proxy] socket hang up
+[debug] [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+[debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+[debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+[WD Proxy] socket hang up
+[debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+[debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+[debug] [WD Proxy] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+[debug] [UiAutomator2] The initialization of the instrumentation process took 2113ms
+[debug] [WD Proxy] Matched '/session' to command name 'createSession'
+[debug] [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","browserName":"Chrome","deviceName":"Pixel 3","platformVersion":"11.0","automationName":"UIAutomator2","chromedriverExecutable":"C:/WebDriver/bin/chromedriver.exe","appiumVersion":"2.0.0-beta.25","waitforTimeout":"30000","commandTimeout":"30000"},"platformName":"Android","browserName":"Chrome","deviceName":"emulator-5554","platformVersion":"11.0","automationName":"UIAutomator2","chromedriverExecutable":"C:/WebDriver/bin/chromedriver.exe","appiumVersion":"2.0.0-beta.25","waitforTimeout":"30000","commandTimeout":"30000","appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"emulator-5554"}],"alwaysMatch":{}}}
+[debug] [WD Proxy] Got response with status 200: {"sessionId":"74e2d9b0-2175-4d74-82f8-c8b49acdafe3","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","browserName":"Chrome","deviceName":"Pixel 3","platformVersion":"11.0","automationName":"UIAutomator2","chromedriverExecutable":"C:/WebDriver/bin/chromedriver.exe","appiumVersion":"2.0.0-beta.25","waitforTimeout":"30000","commandTimeout":"30000"},"platformName":"Android","browserName":"Chrome","deviceName":"emulator-5554","platformVersion":"11.0","automationName":"UIAutomator2","chromedriverExecutable":"C:/WebDriver/bin/chromedriver.exe","appiumVersion":"2.0.0-beta.25","waitforTimeout":"30000","commandTimeout":"30000","appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"emulator-5554"}],"alwaysMatch":{}},"sessionId":"74e2d9b0-2175-4d74-82f8-c8b...
+[WD Proxy] Determined the downstream protocol as 'W3C'
+[debug] [WD Proxy] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/74e2d9b0-2175-4d74-82f8-c8b49acdafe3/appium/device/info] with no body
+[debug] [WD Proxy] Got response with status 200: {"sessionId":"74e2d9b0-2175-4d74-82f8-c8b49acdafe3","value":{"androidId":"576f75f64a4793e1","apiVersion":"30","bluetooth":{"state":"ON"},"brand":"google","carrierName":"Android","displayDensity":440,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone_x86","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":15000,"networkCapabilities":"NET_CAPABILITY_MMS,NET_CAPABILITY_SUPL,NET_CAPABILITY_DUN,NET_CAPABILITY_FOTA,NET_CAPABILITY_IMS,NET_CAPABILITY_CBS,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-2147483648,"transportTypes":"TRANSPORT_CELLULAR"},"detailedState":"CONNECTED","extraInfo":"epc.tmobile.com","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":13,"subtypeName":"LTE","type":0,"typeName":"MOBILE"},{"capabilities":{...
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys window'
+[AndroidDriver] Screen already unlocked, doing nothing
+[AndroidDriver] Starting a chrome-based browser session
+[debug] [AndroidDriver] A port was not given, using random free port: 8000
+[debug] [AndroidDriver] Automated Chromedriver download is disabled. Use 'chromedriver_autodownload' server feature to enable it
+[debug] [AndroidDriver] Precalculated Chromedriver capabilities: {
+[debug] [AndroidDriver]   "androidPackage": "com.android.chrome",
+[debug] [AndroidDriver]   "androidDeviceSerial": "emulator-5554"
+[debug] [AndroidDriver] }
+[debug] [AndroidDriver] Before starting chromedriver, androidPackage is 'com.android.chrome'
+[debug] [Chromedriver] Changed state to 'starting'
+[Chromedriver] Set chromedriver binary as: C:/WebDriver/bin/chromedriver.exe
+[debug] [Chromedriver] Killing any old chromedrivers, running: wmic process where "commandline like '%chromedriver.exe%--port=8000%'" delete
+[debug] [Chromedriver] Successfully cleaned up old chromedrivers
+[debug] [Chromedriver] Cleaning this device's adb forwarded port socket connections: emulator-5554
+[debug] [ADB] List forwarding ports
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward --list'
+[Chromedriver] Spawning chromedriver with: C:/WebDriver/bin/chromedriver.exe --port=8000 --adb-port=5037 --verbose
+[debug] [Chromedriver] Chromedriver version: '83.0.4103.39'
+[debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+[debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8000/status] with no body
+[WD Proxy] connect ECONNREFUSED 127.0.0.1:8000
+[debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+[debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8000/status] with no body
+[debug] [WD Proxy] Got response with status 200: {"value":{"build":{"version":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})"},"message":"ChromeDriver ready for new sessions.","os":{"arch":"x86_64","name":"Windows NT","version":"10.0.19042"},"ready":true}}
+[Chromedriver] Starting W3C Chromedriver session with capabilities: {
+[Chromedriver]   "capabilities": {
+[Chromedriver]     "alwaysMatch": {
+[Chromedriver]       "goog:chromeOptions": {
+[Chromedriver]         "androidPackage": "com.android.chrome",
+[Chromedriver]         "androidDeviceSerial": "emulator-5554"
+[Chromedriver]       },
+[Chromedriver]       "goog:loggingPrefs": {
+[Chromedriver]         "browser": "ALL"
+[Chromedriver]       }
+[Chromedriver]     }
+[Chromedriver]   }
+[Chromedriver] }
+[debug] [WD Proxy] Matched '/session' to command name 'createSession'
+[debug] [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8000/session] with body: {"capabilities":{"alwaysMatch":{"goog:chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"emulator-5554"},"goog:loggingPrefs":{"browser":"ALL"}}}}
+[debug] [Chromedriver] Webview version: 'Chrome/83.0.4103.106'
+[debug] [WD Proxy] Got response with status 200: {"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"83.0.4103.106","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})"},"goog:chromeOptions":{"debuggerAddress":"localhost:60654"},"pageLoadStrategy":"normal","platformName":"android","proxy":{},"setWindowRect":false,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:virtualAuthenticators":false},"sessionId":"d63099964a0f571f5ea6a7dece933a19"}}
+[WD Proxy] Determined the downstream protocol as 'W3C'
+[debug] [Chromedriver] Changed state to 'online'
+[debug] [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/session/74e2d9b0-2175-4d74-82f8-c8b49acdafe3/appium/device/pixel_ratio] with no body
+[debug] [WD Proxy] Got response with status 200: {"sessionId":"74e2d9b0-2175-4d74-82f8-c8b49acdafe3","value":2.75}
+[debug] [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+[debug] [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/session/74e2d9b0-2175-4d74-82f8-c8b49acdafe3/appium/device/system_bars] with no body
+[debug] [WD Proxy] Got response with status 200: {"sessionId":"74e2d9b0-2175-4d74-82f8-c8b49acdafe3","value":{"statusBar":66}}
+[debug] [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+[debug] [WD Proxy] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/session/74e2d9b0-2175-4d74-82f8-c8b49acdafe3/window/current/size] with no body
+[debug] [WD Proxy] Got response with status 200: {"sessionId":"74e2d9b0-2175-4d74-82f8-c8b49acdafe3","value":{"height":2028,"width":1080}}
+[Appium] New AndroidUiautomator2Driver session created successfully, session f3b97ead-e571-4f98-8019-688729990d86 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1643758344405 (07:32:24 GMT+0800 (Иркутск, стандартное время))
+[debug] [W3C (f3b97ead)] Cached the protocol value 'W3C' for the new session f3b97ead-e571-4f98-8019-688729990d86
+[debug] [W3C (f3b97ead)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","browserName":"Chrome","deviceName":"Pixel 3","platformVersion":"11.0","automationName":"UIAutomator2","chromedriverExecutable":"C:/WebDriver/bin/chromedriver.exe","appiumVersion":"2.0.0-beta.25","waitforTimeout":"30000","commandTimeout":"30000"},"platformName":"Android","browserName":"Chrome","deviceName":"emulator-5554","platformVersion":"11","automationName":"UIAutomator2","chromedriverExecutable":"C:/WebDriver/bin/chromedriver.exe","appiumVersion":"2.0.0-beta.25","waitforTimeout":"30000","commandTimeout":"30000","appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"emulator-5554","deviceApiLevel":30,"deviceScreenSize":"1080x2160","deviceScreenDensity":440,"deviceModel":"sdk_gphone_x86","deviceManufacturer":"Google"...[HTTP] <-- POST /session 200 6777 ms - 1183
+[HTTP] 
+[HTTP] --> POST /session/f3b97ead-e571-4f98-8019-688729990d86/url
+[HTTP] {"url":"https://webdriver.io/"}
+[W3C (f3b97ead)] Driver proxy active, passing request on via HTTP proxy
+[debug] [WD Proxy] Matched '/session/f3b97ead-e571-4f98-8019-688729990d86/url' to command name 'setUrl'
+[debug] [WD Proxy] Proxying [POST /session/f3b97ead-e571-4f98-8019-688729990d86/url] to [POST http://127.0.0.1:8000/session/d63099964a0f571f5ea6a7dece933a19/url] with body: {"url":"https://webdriver.io/"}
+[debug] [WD Proxy] Got response with status 200: {"value":null}
+[HTTP] <-- POST /session/f3b97ead-e571-4f98-8019-688729990d86/url 200 3161 ms - 14
+[HTTP]
+[HTTP] --> POST /session/f3b97ead-e571-4f98-8019-688729990d86/element
+[HTTP] {"using":"css selector","value":".hero__title"}
+[W3C (f3b97ead)] Driver proxy active, passing request on via HTTP proxy
+[debug] [WD Proxy] Matched '/session/f3b97ead-e571-4f98-8019-688729990d86/element' to command name 'findElement'
+[debug] [WD Proxy] Proxying [POST /session/f3b97ead-e571-4f98-8019-688729990d86/element] to [POST http://127.0.0.1:8000/session/d63099964a0f571f5ea6a7dece933a19/element] with body: {"using":"css selector","value":".hero__title"}
+[debug] [WD Proxy] Got response with status 200: {"value":{"element-6066-11e4-a52e-4f735466cecf":"1fe20605-863c-4ab8-906b-db7279295f03"}}
+[HTTP] <-- POST /session/f3b97ead-e571-4f98-8019-688729990d86/element 200 87 ms - 137
+[HTTP]
+[HTTP] --> DELETE /session/f3b97ead-e571-4f98-8019-688729990d86
+[HTTP] {}
+[debug] [W3C (f3b97ead)] Calling AppiumDriver.deleteSession() with args: ["f3b97ead-e571-4f98-8019-688729990d86"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1643758347739 (07:32:27 GMT+0800 (Иркутск, стандартное время))
+[Appium] Removing session f3b97ead-e571-4f98-8019-688729990d86 from our master session list
+[debug] [UiAutomator2] Deleting UiAutomator2 session
+[debug] [AndroidDriver] Stopping chromedriver for context CHROMIUM
+[debug] [Chromedriver] Changed state to 'stopping'
+[debug] [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8000/session/d63099964a0f571f5ea6a7dece933a19] with no body
+[debug] [WD Proxy] Got response with status 200: {"value":null}
+[debug] [Chromedriver] Changed state to 'stopped'
+[debug] [UiAutomator2] Deleting UiAutomator2 server session
+[debug] [WD Proxy] Matched '/' to command name 'deleteSession'
+[debug] [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/session/74e2d9b0-2175-4d74-82f8-c8b49acdafe3] with no body
+[debug] [WD Proxy] Got response with status 200: {"sessionId":"74e2d9b0-2175-4d74-82f8-c8b49acdafe3","value":null}
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Removing forwarded port socket connection: 8200
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:8200'
+[UiAutomator2] Restoring hidden api policy to the device default configuration
+[debug] [ADB] Running 'C:\Users\searc\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1643758348094 (07:32:28 GMT+0800 (Иркутск, стандартное время))
+[debug] [W3C (f3b97ead)] Received response: null
+[debug] [W3C (f3b97ead)] But deleting session, so not returning
+[debug] [W3C (f3b97ead)] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /session/f3b97ead-e571-4f98-8019-688729990d86 200 359 ms - 14
+[HTTP]
+[debug] [Instrumentation] .
+[debug] [Instrumentation] Time: 8.051
+[debug] [Instrumentation]
+[debug] [Instrumentation] OK (1 test)
+[debug] [Instrumentation] The process has exited with code 0
