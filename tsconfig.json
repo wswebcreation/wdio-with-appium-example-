@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./build",
+        "allowJs": true,
+        "inlineSourceMap": true,
+        "types": [
+            "node",
+            "webdriverio/async",
+            "@wdio/mocha-framework",
+            "expect-webdriverio",
+            "wdio-image-comparison-service",
+            "chai",
+            "@wdio/allure-reporter",
+            "@types/allure-js-commons"
+        ],
+        "module": "commonjs",
+        "target": "ES6"
+    }
+}
