@@ -13,7 +13,6 @@ exports.config = {
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
     runner: 'local',
-    port: 4723,
     //
     // ==================
     // Specify Test Files
@@ -68,21 +67,15 @@ exports.config = {
     capabilities: [{
         maxInstances: 1,
         platformName: "Android",
-        "appium:deviceName": "Pixel 3",
-        "appium:platformVersion": "11.0",
+        browserName: 'Chrome',
+        // "appium:deviceName": "Pixel 3",
+        // "appium:platformVersion": "11.0",
+        'appium:deviceName': 'Pixel_3_10',
+        'appium:platformVersion': '10.0',
         "appium:automationName": "UIAutomator2",
-        "browserName": "Chrome",
-        "appium:chromedriverExecutable": "C:/WebDriver/bin/chromedriver.exe",
-        "appium:appiumVersion": '2.0.0-beta.25',
-        "appium:waitforTimeout": '30000',
-        "appium:commandTimeout": '30000'
-        //             maxInstances: 5,
-        
-        // acceptInsecureCerts: true
+        "appium:waitforTimeout": 30000,
+        "appium:commandTimeout": 30000
     }],
-            // maxInstances: 5,
-        // browserName: 'chrome',
-        // acceptInsecureCerts: true
     //
     // ===================
     // Test Configurations
@@ -133,15 +126,27 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: [
-        ['appium'],
-        ['chromedriver'],
+        [
+            'appium',
+            {
+                // This will use the globally installed version of Appium
+                command: 'appium',
+                logPath : './',
+                args: {
+                    // This is needed to tell Appium that we can execute local ADB commands
+                    // and to automatically download the latest version of ChromeDriver
+                    relaxedSecurity: true,
+                },
+            },
+
+        ],
         ['image-comparison', 
         // The options
         { 
             // Some options, see the docs for more
             baselineFolder: join(process.cwd(), './test/visual test/baseline/'),
             formatImageName: '{tag}-{logName}-{width}x{height}',
-            screenshotPath: join(process.cwd(), './test/visual test/chekc/'),
+            screenshotPath: join(process.cwd(), './test/visual test/check/'),
             // savePerInstance: true,
             autoSaveBaseline: true,
             // blockOutStatusBar: true,
@@ -174,16 +179,14 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters:
-    ['spec',
-    ['allure', {
-        outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: true,
-    }]
+    reporters: [
+        'spec',
+        ['allure', {
+            outputDir: 'allure-results',
+            disableWebdriverStepsReporting: true,
+            disableWebdriverScreenshotsReporting: true,
+        }],
     ],
-    outputDir: 'log',
-
     
     //
     // Options to be passed to Mocha.
