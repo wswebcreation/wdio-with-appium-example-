@@ -1,0 +1,165 @@
+2022-02-06T02:30:59.259Z INFO @wdio/local-runner: Run worker command: run
+2022-02-06T02:30:59.542Z DEBUG @wdio/config:utils: Found 'ts-node' package, auto-compiling TypeScript files
+2022-02-06T02:30:59.694Z DEBUG @wdio/local-runner:utils: init remote session
+2022-02-06T02:30:59.705Z DEBUG @wdio/utils:initialiseServices: initialise service "appium" as NPM package
+2022-02-06T02:30:59.718Z DEBUG @wdio/utils:initialiseServices: initialise service "chromedriver" as NPM package
+2022-02-06T02:30:59.789Z DEBUG @wdio/utils:initialiseServices: initialise service "image-comparison" as NPM package
+2022-02-06T02:31:04.946Z DEBUG @wdio/local-runner:utils: init remote session
+2022-02-06T02:31:04.948Z INFO webdriver: Initiate new session using the WebDriver protocol
+2022-02-06T02:31:05.418Z INFO webdriver: [POST] http://localhost:9515/session
+2022-02-06T02:31:05.418Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      platformName: 'Android',
+      'appium:deviceName': 'Pixel 3',
+      'appium:platformVersion': '11.0',
+      'appium:automationName': 'UIAutomator2',
+      browserName: 'Chrome',
+      'appium:chromedriverExecutable': 'C:/WebDriver/bin/chromedriver.exe',
+      'appium:appiumVersion': '2.0.0-beta.25',
+      'appium:waitforTimeout': '30000',
+      'appium:commandTimeout': '30000'
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    platformName: 'Android',
+    'appium:deviceName': 'Pixel 3',
+    'appium:platformVersion': '11.0',
+    'appium:automationName': 'UIAutomator2',
+    browserName: 'Chrome',
+    'appium:chromedriverExecutable': 'C:/WebDriver/bin/chromedriver.exe',
+    'appium:appiumVersion': '2.0.0-beta.25',
+    'appium:waitforTimeout': '30000',
+    'appium:commandTimeout': '30000'
+  }
+}
+2022-02-06T02:31:05.460Z DEBUG webdriver: request failed due to response error: session not created
+2022-02-06T02:31:05.460Z WARN webdriver: Request failed with status 500 due to session not created: No matching capabilities found
+2022-02-06T02:31:05.460Z INFO webdriver: Retrying 1/3
+2022-02-06T02:31:05.460Z INFO webdriver: [POST] http://localhost:9515/session
+2022-02-06T02:31:05.460Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      platformName: 'Android',
+      'appium:deviceName': 'Pixel 3',
+      'appium:platformVersion': '11.0',
+      'appium:automationName': 'UIAutomator2',
+      browserName: 'Chrome',
+      'appium:chromedriverExecutable': 'C:/WebDriver/bin/chromedriver.exe',
+      'appium:appiumVersion': '2.0.0-beta.25',
+      'appium:waitforTimeout': '30000',
+      'appium:commandTimeout': '30000'
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    platformName: 'Android',
+    'appium:deviceName': 'Pixel 3',
+    'appium:platformVersion': '11.0',
+    'appium:automationName': 'UIAutomator2',
+    browserName: 'Chrome',
+    'appium:chromedriverExecutable': 'C:/WebDriver/bin/chromedriver.exe',
+    'appium:appiumVersion': '2.0.0-beta.25',
+    'appium:waitforTimeout': '30000',
+    'appium:commandTimeout': '30000'
+  }
+}
+2022-02-06T02:31:05.463Z DEBUG webdriver: request failed due to response error: session not created
+2022-02-06T02:31:05.463Z WARN webdriver: Request failed with status 500 due to session not created: No matching capabilities found
+2022-02-06T02:31:05.463Z INFO webdriver: Retrying 2/3
+2022-02-06T02:31:05.463Z INFO webdriver: [POST] http://localhost:9515/session
+2022-02-06T02:31:05.463Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      platformName: 'Android',
+      'appium:deviceName': 'Pixel 3',
+      'appium:platformVersion': '11.0',
+      'appium:automationName': 'UIAutomator2',
+      browserName: 'Chrome',
+      'appium:chromedriverExecutable': 'C:/WebDriver/bin/chromedriver.exe',
+      'appium:appiumVersion': '2.0.0-beta.25',
+      'appium:waitforTimeout': '30000',
+      'appium:commandTimeout': '30000'
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    platformName: 'Android',
+    'appium:deviceName': 'Pixel 3',
+    'appium:platformVersion': '11.0',
+    'appium:automationName': 'UIAutomator2',
+    browserName: 'Chrome',
+    'appium:chromedriverExecutable': 'C:/WebDriver/bin/chromedriver.exe',
+    'appium:appiumVersion': '2.0.0-beta.25',
+    'appium:waitforTimeout': '30000',
+    'appium:commandTimeout': '30000'
+  }
+}
+2022-02-06T02:31:05.465Z DEBUG webdriver: request failed due to response error: session not created
+2022-02-06T02:31:05.465Z WARN webdriver: Request failed with status 500 due to session not created: No matching capabilities found
+2022-02-06T02:31:05.465Z INFO webdriver: Retrying 3/3
+2022-02-06T02:31:05.465Z INFO webdriver: [POST] http://localhost:9515/session
+2022-02-06T02:31:05.465Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      platformName: 'Android',
+      'appium:deviceName': 'Pixel 3',
+      'appium:platformVersion': '11.0',
+      'appium:automationName': 'UIAutomator2',
+      browserName: 'Chrome',
+      'appium:chromedriverExecutable': 'C:/WebDriver/bin/chromedriver.exe',
+      'appium:appiumVersion': '2.0.0-beta.25',
+      'appium:waitforTimeout': '30000',
+      'appium:commandTimeout': '30000'
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    platformName: 'Android',
+    'appium:deviceName': 'Pixel 3',
+    'appium:platformVersion': '11.0',
+    'appium:automationName': 'UIAutomator2',
+    browserName: 'Chrome',
+    'appium:chromedriverExecutable': 'C:/WebDriver/bin/chromedriver.exe',
+    'appium:appiumVersion': '2.0.0-beta.25',
+    'appium:waitforTimeout': '30000',
+    'appium:commandTimeout': '30000'
+  }
+}
+2022-02-06T02:31:05.467Z DEBUG webdriver: request failed due to response error: session not created
+2022-02-06T02:31:05.467Z ERROR webdriver: Request failed with status 500 due to session not created: session not created: No matching capabilities found
+2022-02-06T02:31:05.467Z ERROR webdriver: Backtrace:
+	Ordinal0 [0x01239563+2725219]
+	Ordinal0 [0x01138551+1672529]
+	Ordinal0 [0x01020359+525145]
+	Ordinal0 [0x00FCC0C2+180418]
+	Ordinal0 [0x00FCBBC7+179143]
+	Ordinal0 [0x00FCCAD0+182992]
+	Ordinal0 [0x00FCCA3D+182845]
+	Ordinal0 [0x00FCA94B+174411]
+	Ordinal0 [0x00FB2528+75048]
+	Ordinal0 [0x00FB35A0+79264]
+	Ordinal0 [0x00FB3539+79161]
+	Ordinal0 [0x0114D607+1758727]
+	GetHandleVerifier [0x01356546+1050150]
+	GetHandleVerifier [0x01356291+1049457]
+	GetHandleVerifier [0x013610D7+1094071]
+	GetHandleVerifier [0x01356B46+1051686]
+	Ordinal0 [0x01145B06+1727238]
+	Ordinal0 [0x0114EB7B+1764219]
+	Ordinal0 [0x0114ECE3+1764579]
+	Ordinal0 [0x01164C05+1854469]
+	BaseThreadInitThunk [0x759EFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77927A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77927A6E+238]
+
+2022-02-06T02:31:05.467Z ERROR @wdio/runner: Error: Failed to create session.
+session not created: No matching capabilities found
+    at startWebDriverSession (C:\automation\wdio-with-appium-example-\node_modules\webdriver\build\utils.js:72:15)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at async Function.newSession (C:\automation\wdio-with-appium-example-\node_modules\webdriver\build\index.js:42:45)
+    at async remote (C:\automation\wdio-with-appium-example-\node_modules\webdriverio\build\index.js:73:22)
+    at async Runner._startSession (C:\automation\wdio-with-appium-example-\node_modules\@wdio\runner\build\index.js:223:56)
+    at async Runner._initSession (C:\automation\wdio-with-appium-example-\node_modules\@wdio\runner\build\index.js:176:25)
+    at async Runner.run (C:\automation\wdio-with-appium-example-\node_modules\@wdio\runner\build\index.js:88:19)

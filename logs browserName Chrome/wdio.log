@@ -1,0 +1,26 @@
+2022-02-06T02:30:47.461Z WARN @wdio/config:ConfigParser: pattern ./test/specs/check_form.ts did not match any file
+2022-02-06T02:30:47.573Z DEBUG @wdio/utils:initialiseServices: initialise service "appium" as NPM package
+2022-02-06T02:30:47.668Z DEBUG @wdio/utils:initialiseServices: initialise service "chromedriver" as NPM package
+2022-02-06T02:30:47.891Z DEBUG @wdio/utils:initialiseServices: initialise service "image-comparison" as NPM package
+2022-02-06T02:30:48.430Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-02-06T02:30:48.431Z DEBUG @wdio/appium-service: Will spawn Appium process: cmd /c node C:\automation\wdio-with-appium-example-\node_modules\appium\index.js --base-path /
+2022-02-06T02:30:48.437Z INFO chromedriver: Start Chromedriver (C:\automation\wdio-with-appium-example-\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2022-02-06T02:30:58.605Z ERROR @wdio/cli:utils: A service failed in the 'onPrepare' hook
+Error: Appium exited before timeout (exit code: 1)
+    at ChildProcess.<anonymous> (C:\automation\wdio-with-appium-example-\node_modules\@wdio\appium-service\build\launcher.js:110:22)
+    at Object.onceWrapper (node:events:434:26)
+    at ChildProcess.emit (node:events:327:20)
+    at ChildProcess.EventEmitter.emit (node:domain:486:12)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:277:12)
+
+Continue...
+2022-02-06T02:30:58.606Z DEBUG @wdio/cli:utils: Finished to run "onPrepare" hook in 10176ms
+2022-02-06T02:30:58.607Z WARN @wdio/config:ConfigParser: pattern ./test/specs/check_form.ts did not match any file
+2022-02-06T02:30:58.607Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-02-06T02:30:58.608Z DEBUG @wdio/cli:utils: Finished to run "onWorkerStart" hook in 0ms
+2022-02-06T02:30:58.609Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,./wdio.conf.js
+2022-02-06T02:31:05.612Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 1
+2022-02-06T02:31:05.613Z INFO @wdio/cli:launcher: Run onComplete hook
+2022-02-06T02:31:05.613Z DEBUG @wdio/cli:utils: Finished to run "onComplete" hook in 0ms
+2022-02-06T02:31:09.250Z INFO @wdio/local-runner: Shutting down spawned worker
+2022-02-06T02:31:09.504Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

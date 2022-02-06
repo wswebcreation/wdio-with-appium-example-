@@ -13,7 +13,7 @@ exports.config = {
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
     runner: 'local',
-    port: 4724,
+    port: 4723,
     //
     // ==================
     // Specify Test Files
@@ -71,7 +71,7 @@ exports.config = {
         "appium:deviceName": "Pixel 3",
         "appium:platformVersion": "11.0",
         "appium:automationName": "UIAutomator2",
-        "appium:browserName": "Chrome",
+        "browserName": "Chrome",
         "appium:chromedriverExecutable": "C:/WebDriver/bin/chromedriver.exe",
         "appium:appiumVersion": '2.0.0-beta.25',
         "appium:waitforTimeout": '30000',
@@ -182,7 +182,7 @@ exports.config = {
         disableWebdriverScreenshotsReporting: true,
     }]
     ],
-    // outputDir: 'logs',
+    outputDir: 'log',
 
     
     //
